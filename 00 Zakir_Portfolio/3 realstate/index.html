@@ -1,0 +1,3681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIME PROPERTIES | Private Office & Luxury Real Estate</title>
+    <meta name="description" content="Prime Properties Private Office represents the world's most distinguished estates, waterfront residences, and bespoke architectural investments.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 Pro/Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #0A0E17;
+            --primary-surface: #111827;
+            --primary-accent: #1E293B;
+            --gold: #C5A880;
+            --gold-light: #E0C9A6;
+            --gold-dark: #9F8259;
+            --gold-gradient: linear-gradient(135deg, #DFBA73 0%, #C5A880 50%, #9E7D47 100%);
+            --gold-glow: rgba(197, 168, 128, 0.25);
+            --bg-light: #F8F9FA;
+            --bg-card: #FFFFFF;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --text-light: #94A3B8;
+            --border-color: #E2E8F0;
+            --border-light: rgba(226, 232, 240, 0.8);
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+            --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+            --shadow-lg: 0 20px 40px -10px rgba(10, 14, 23, 0.12), 0 10px 15px -3px rgba(10, 14, 23, 0.05);
+            --shadow-gold: 0 12px 30px -5px rgba(197, 168, 128, 0.35);
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-main);
+            background-color: #FFFFFF;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Editorial Typography */
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+        }
+
+        h1 {
+            font-size: clamp(2.8rem, 5.5vw, 4.6rem);
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+        }
+
+        h3 {
+            font-size: 1.75rem;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--gold-dark);
+            margin-bottom: 0.85rem;
+        }
+
+        .eyebrow::before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 1.5px;
+            background: var(--gold);
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1380px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Buttons & Actions */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 32px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-gold {
+            background: var(--gold-gradient);
+            color: #0A0E17;
+            font-weight: 700;
+            box-shadow: 0 6px 20px rgba(197, 168, 128, 0.3);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(197, 168, 128, 0.45);
+            color: #000;
+        }
+
+        .btn-dark {
+            background-color: var(--primary);
+            color: #FFFFFF;
+        }
+
+        .btn-dark:hover {
+            background-color: var(--primary-surface);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            color: var(--gold-light);
+        }
+
+        .btn-outline-gold {
+            background: transparent;
+            border: 1.5px solid var(--gold);
+            color: var(--gold);
+        }
+
+        .btn-outline-gold:hover {
+            background: var(--gold-gradient);
+            color: var(--primary);
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-dark {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline-dark:hover {
+            background: var(--primary);
+            color: #FFF;
+            transform: translateY(-2px);
+        }
+
+        .btn-sm {
+            padding: 9px 20px;
+            font-size: 0.75rem;
+            letter-spacing: 1.2px;
+        }
+
+        /* Top Announcement Bar */
+        .top-bar {
+            background: #06090F;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .top-bar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-left span {
+            color: var(--gold);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .top-bar-right a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .top-bar-right a:hover {
+            color: var(--gold);
+        }
+
+        /* Header Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-light);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            background: rgba(255, 255, 255, 0.98);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled .nav-container {
+            padding: 10px 0;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-emblem {
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            color: var(--gold);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            border: 1px solid rgba(197, 168, 128, 0.4);
+            position: relative;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.65rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .logo-sub {
+            font-size: 0.65rem;
+            letter-spacing: 3.5px;
+            color: var(--gold-dark);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.88rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            position: relative;
+            padding: 6px 0;
+            transition: var(--transition);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-gradient);
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--gold-dark);
+        }
+
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .saved-count-pill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            padding: 8px 14px;
+            border-radius: var(--radius-full);
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .saved-count-pill:hover {
+            border-color: var(--gold);
+            background: #FFF;
+        }
+
+        .saved-count-pill i {
+            color: #E11D48;
+        }
+
+        .saved-badge {
+            background: var(--primary);
+            color: var(--gold);
+            font-size: 0.72rem;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Hero Showcase */
+        .hero-section {
+            position: relative;
+            min-height: 88vh;
+            background: var(--primary);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            padding: 100px 0 160px;
+            background-image: 
+                radial-gradient(circle at 80% 20%, rgba(197, 168, 128, 0.15) 0%, transparent 50%),
+                linear-gradient(rgba(10, 14, 23, 0.75), rgba(10, 14, 23, 0.88)), 
+                url('hero.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            background-attachment: fixed;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(197, 168, 128, 0.35);
+            padding: 8px 18px;
+            border-radius: var(--radius-full);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold-light);
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-badge i {
+            color: var(--gold);
+        }
+
+        .hero-title {
+            color: #FFFFFF;
+            font-size: clamp(3rem, 5.2vw, 4.8rem);
+            margin-bottom: 22px;
+            line-height: 1.1;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.78);
+            max-width: 580px;
+            margin-bottom: 36px;
+            font-weight: 300;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats-card {
+            background: rgba(17, 24, 39, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius-md);
+            padding: 32px;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            position: relative;
+        }
+
+        .hero-stats-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20%;
+            right: 20%;
+            height: 1.5px;
+            background: var(--gold-gradient);
+        }
+
+        .hero-stats-card h4 {
+            color: #FFF;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-stats-card p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+        }
+
+        .stats-mini-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .stat-item {
+            border-left: 2px solid var(--gold);
+            padding-left: 14px;
+        }
+
+        .stat-num {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .stat-lbl {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Redesigned Floating Master Search Console */
+        .search-wrapper {
+            position: relative;
+            margin-top: -95px;
+            z-index: 30;
+            margin-bottom: 60px;
+        }
+
+        .search-console {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            box-shadow: 0 25px 60px rgba(10, 14, 23, 0.12), 0 5px 15px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+        }
+
+        .search-tabs {
+            display: flex;
+            background: #F1F5F9;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .search-tab {
+            padding: 16px 28px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-tab.active {
+            background: #FFFFFF;
+            color: var(--primary);
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .search-tab:hover:not(.active) {
+            color: var(--primary);
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .search-body {
+            padding: 28px;
+        }
+
+        .search-grid {
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr auto;
+            gap: 16px;
+            align-items: flex-end;
+        }
+
+        .input-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-block label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .input-block label i {
+            color: var(--gold-dark);
+        }
+
+        .input-field {
+            width: 100%;
+            height: 52px;
+            padding: 0 16px;
+            background: #F8FAFC;
+            border: 1.5px solid #E2E8F0;
+            border-radius: var(--radius-sm);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.92rem;
+            color: var(--text-main);
+            font-weight: 500;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .input-field:focus {
+            background: #FFFFFF;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.15);
+        }
+
+        select.input-field {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2364748B%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px top 50%;
+            background-size: 10px auto;
+            padding-right: 36px;
+        }
+
+        .search-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-search {
+            height: 52px;
+            padding: 0 28px;
+            white-space: nowrap;
+        }
+
+        .search-drawer-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 18px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .quick-pills {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .quick-pills-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 6px;
+        }
+
+        .pill-btn {
+            background: #F1F5F9;
+            border: 1px solid transparent;
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .pill-btn:hover, .pill-btn.active {
+            background: var(--primary);
+            color: #FFF;
+        }
+
+        .toggle-filter-btn {
+            background: transparent;
+            border: none;
+            color: var(--gold-dark);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .toggle-filter-btn:hover {
+            color: var(--primary);
+        }
+
+        .toggle-filter-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-filter-btn.open i {
+            transform: rotate(180deg);
+        }
+
+        .advanced-drawer {
+            display: none;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed var(--border-color);
+            animation: slideDown 0.3s ease;
+        }
+
+        .advanced-drawer.show {
+            display: grid;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Section Layouts */
+        section {
+            padding: 90px 0;
+            position: relative;
+        }
+
+        .section-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 48px;
+        }
+
+        .section-title-wrap h2 {
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        /* Curated Properties Grid */
+        .properties-section {
+            background-color: #FAFAFC;
+        }
+
+        .filter-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .results-count {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .results-count strong {
+            color: var(--primary);
+        }
+
+        .toolbar-controls {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .sort-select {
+            height: 40px;
+            padding: 0 14px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            background: #FFF;
+            font-family: inherit;
+            font-size: 0.82rem;
+            color: var(--text-main);
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 32px;
+        }
+
+        /* Professional Property Card */
+        .property-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .property-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(197, 168, 128, 0.4);
+        }
+
+        .card-media-wrap {
+            position: relative;
+            height: 270px;
+            overflow: hidden;
+            background: #0A0E17;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .property-card:hover .card-img {
+            transform: scale(1.08);
+        }
+
+        .card-overlay-badges {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            right: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .badge-status {
+            background: rgba(10, 14, 23, 0.85);
+            color: #FFFFFF;
+            backdrop-filter: blur(8px);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .badge-status.badge-exclusive {
+            background: var(--gold-gradient);
+            color: #0A0E17;
+            border: none;
+            box-shadow: 0 4px 12px rgba(197, 168, 128, 0.3);
+        }
+
+        .btn-fav {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            backdrop-filter: blur(4px);
+        }
+
+        .btn-fav:hover {
+            background: #FFFFFF;
+            color: #E11D48;
+            transform: scale(1.1);
+        }
+
+        .btn-fav.active {
+            color: #E11D48;
+            background: #FFF;
+        }
+
+        .card-view-count {
+            position: absolute;
+            bottom: 12px;
+            left: 16px;
+            background: rgba(0, 0, 0, 0.65);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.72rem;
+            padding: 4px 10px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            backdrop-filter: blur(4px);
+        }
+
+        .card-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .card-price {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .card-price-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .card-location {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+        }
+
+        .card-location i {
+            color: var(--gold-dark);
+            font-size: 0.85rem;
+        }
+
+        .card-desc {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-specs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            padding: 14px 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-main);
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+        .spec-item i {
+            color: var(--gold-dark);
+            font-size: 0.95rem;
+        }
+
+        .card-footer {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-card-primary {
+            flex: 1;
+            padding: 12px 18px;
+            font-size: 0.78rem;
+        }
+
+        .btn-card-tour {
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            background: #FFF;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-card-tour:hover {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: var(--gold);
+        }
+
+        /* Curated Prime Locations Showcase */
+        .locations-section {
+            background: #FFFFFF;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .location-card {
+            position: relative;
+            height: 380px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .location-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .location-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10, 14, 23, 0.1) 0%, rgba(10, 14, 23, 0.85) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 28px;
+            color: #FFFFFF;
+            transition: var(--transition);
+        }
+
+        .location-card:hover .location-img {
+            transform: scale(1.1);
+        }
+
+        .location-card:hover .location-overlay {
+            background: linear-gradient(180deg, rgba(10, 14, 23, 0.2) 0%, rgba(10, 14, 23, 0.95) 100%);
+        }
+
+        .location-tag {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold-light);
+            margin-bottom: 6px;
+        }
+
+        .location-name {
+            font-size: 1.8rem;
+            color: #FFF;
+            margin-bottom: 4px;
+        }
+
+        .location-count {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.75);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Private Office / About Showcase */
+        .about-section {
+            background: var(--primary);
+            color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(197, 168, 128, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.05fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-media-stack {
+            position: relative;
+        }
+
+        .about-img-main {
+            width: 90%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .about-seal-card {
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+            background: #111827;
+            border: 1.5px solid var(--gold);
+            border-radius: var(--radius-md);
+            padding: 24px 28px;
+            box-shadow: var(--shadow-lg);
+            max-width: 260px;
+        }
+
+        .seal-year {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .seal-text {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.4;
+        }
+
+        .about-text h2 {
+            color: #FFF;
+            margin-bottom: 24px;
+        }
+
+        .about-text p {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 1.02rem;
+            line-height: 1.8;
+            margin-bottom: 22px;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        .pillar-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-sm);
+            padding: 20px;
+        }
+
+        .pillar-icon {
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .pillar-title {
+            color: #FFF;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .pillar-desc {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 0;
+        }
+
+        /* Bespoke Services */
+        .services-section {
+            background: #FAFAFC;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            padding: 40px 32px;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(197, 168, 128, 0.5);
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 32px;
+            width: 0;
+            height: 3px;
+            background: var(--gold-gradient);
+            transition: var(--transition);
+        }
+
+        .service-card:hover::after {
+            width: 60px;
+        }
+
+        .service-icon-box {
+            width: 64px;
+            height: 64px;
+            background: #F8FAFC;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin-bottom: 24px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon-box {
+            background: var(--primary);
+            color: var(--gold);
+            border-color: var(--primary);
+        }
+
+        .service-card h3 {
+            font-size: 1.45rem;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            line-height: 1.65;
+            margin-bottom: 24px;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--primary);
+            text-decoration: none;
+            margin-top: auto;
+            transition: var(--transition);
+        }
+
+        .service-link:hover {
+            color: var(--gold-dark);
+            gap: 12px;
+        }
+
+        /* Private Wealth Mortgage & Financial Planning Suite */
+        .calculator-section {
+            background: #FFFFFF;
+        }
+
+        .calc-wrapper {
+            background: #FAFAFC;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            padding: 50px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .calc-controls-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+        }
+
+        .calc-slider-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slider-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .slider-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .slider-display-val {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .range-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 6px;
+            background: #CBD5E1;
+            border-radius: 4px;
+            outline: none;
+            transition: background 0.2s;
+        }
+
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 3px solid var(--gold);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .range-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .range-slider::-moz-range-thumb {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 3px solid var(--gold);
+            cursor: pointer;
+        }
+
+        .calc-summary-panel {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 36px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .calc-monthly-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .calc-monthly-amount {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+
+        .calc-breakdown-bar {
+            height: 10px;
+            border-radius: 5px;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 24px;
+            background: #E2E8F0;
+        }
+
+        .breakdown-pi { background: var(--primary); width: 68%; }
+        .breakdown-tax { background: var(--gold); width: 18%; }
+        .breakdown-ins { background: #64748B; width: 10%; }
+        .breakdown-hoa { background: #94A3B8; width: 4%; }
+
+        .breakdown-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.88rem;
+        }
+
+        .breakdown-key {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+        }
+
+        .breakdown-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .breakdown-val {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Private Managing Partners / Agents */
+        .agents-section {
+            background: #FAFAFC;
+        }
+
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 36px;
+        }
+
+        .agent-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .agent-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(197, 168, 128, 0.4);
+        }
+
+        .agent-headshot-wrap {
+            height: 340px;
+            overflow: hidden;
+            position: relative;
+            background: #0A0E17;
+        }
+
+        .agent-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.6s ease;
+        }
+
+        .agent-card:hover .agent-img {
+            transform: scale(1.05);
+        }
+
+        .agent-award-tag {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            background: rgba(10, 14, 23, 0.85);
+            color: var(--gold-light);
+            backdrop-filter: blur(8px);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 5px 12px;
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(197, 168, 128, 0.3);
+        }
+
+        .agent-info {
+            padding: 28px;
+            text-align: center;
+        }
+
+        .agent-name {
+            font-size: 1.55rem;
+            margin-bottom: 4px;
+        }
+
+        .agent-role {
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--gold-dark);
+            margin-bottom: 14px;
+        }
+
+        .agent-bio {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .agent-stats-bar {
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .agent-stat-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .agent-stat-val {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+
+        .agent-stat-label {
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+        }
+
+        .agent-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .agent-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .agent-btn:hover {
+            background: var(--primary);
+            color: var(--gold);
+            border-color: var(--primary);
+        }
+
+        /* Press & Editorial Accreditations */
+        .press-strip {
+            background: #FFFFFF;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .press-grid {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            opacity: 0.65;
+            filter: grayscale(100%);
+            transition: var(--transition);
+        }
+
+        .press-grid:hover {
+            opacity: 0.95;
+            filter: grayscale(0%);
+        }
+
+        .press-logo-text {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        /* Private Consultation / Contact Section */
+        .contact-section {
+            background: #FFFFFF;
+        }
+
+        .contact-card-wrap {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-sidebar {
+            background: var(--primary);
+            color: #FFFFFF;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .contact-sidebar h3 {
+            color: #FFF;
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+
+        .contact-sidebar p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            margin-bottom: 36px;
+        }
+
+        .contact-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .contact-icon-bubble {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(197, 168, 128, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-info-item h5 {
+            color: #FFF;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+        }
+
+        .contact-info-item span {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .contact-form-side {
+            background: #FFFFFF;
+            padding: 50px;
+        }
+
+        .contact-form-side h4 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-form-side p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+        }
+
+        .form-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+
+        .form-full {
+            margin-bottom: 18px;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 14px 16px;
+            background: #F8FAFC;
+            border: 1.5px solid #E2E8F0;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 0.92rem;
+            color: var(--text-main);
+            outline: none;
+            resize: vertical;
+            transition: var(--transition);
+        }
+
+        .form-textarea:focus {
+            background: #FFFFFF;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.15);
+        }
+
+        /* Footer */
+        footer {
+            background: #06090F;
+            color: #FFFFFF;
+            padding: 80px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand .logo-title {
+            color: #FFFFFF;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.88rem;
+            line-height: 1.7;
+            margin: 20px 0 24px;
+        }
+
+        .footer-social-row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-social-btn:hover {
+            background: var(--gold-gradient);
+            color: #0A0E17;
+            border-color: transparent;
+            transform: translateY(-3px);
+        }
+
+        .footer-col h5 {
+            color: #FFFFFF;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 22px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 28px;
+            height: 1.5px;
+            background: var(--gold);
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            font-size: 0.88rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light);
+            transform: translateX(4px);
+        }
+
+        .footer-newsletter p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.86rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .newsletter-box {
+            display: flex;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+
+        .newsletter-box input {
+            flex: 1;
+            padding: 12px 16px;
+            background: transparent;
+            border: none;
+            color: #FFF;
+            font-family: inherit;
+            font-size: 0.85rem;
+            outline: none;
+        }
+
+        .newsletter-box button {
+            background: var(--gold-gradient);
+            border: none;
+            padding: 0 20px;
+            color: #0A0E17;
+            cursor: pointer;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+
+        .newsletter-box button:hover {
+            background: var(--gold-light);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.45);
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-bottom-links a {
+            color: rgba(255, 255, 255, 0.45);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Modal Architecture Details & Schedule Tour */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 14, 23, 0.85);
+            backdrop-filter: blur(12px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal-backdrop.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-box {
+            background: #FFFFFF;
+            width: 100%;
+            max-width: 900px;
+            max-height: 90vh;
+            border-radius: var(--radius-md);
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+            transform: scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .modal-backdrop.open .modal-box {
+            transform: scale(1);
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 10;
+            transition: var(--transition);
+        }
+
+        .modal-close-btn:hover {
+            background: var(--primary);
+            color: var(--gold);
+        }
+
+        .modal-hero-img-wrap {
+            height: 380px;
+            position: relative;
+            background: #0A0E17;
+        }
+
+        .modal-hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-inner-content {
+            padding: 40px;
+        }
+
+        .modal-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .modal-prop-title {
+            font-size: 2.2rem;
+            margin-bottom: 4px;
+        }
+
+        .modal-prop-price {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .modal-specs-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            background: #F8FAFC;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 20px;
+            margin-bottom: 28px;
+        }
+
+        .modal-spec-col {
+            text-align: center;
+        }
+
+        .modal-spec-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .modal-spec-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .modal-description {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .modal-tour-cta-box {
+            background: #111827;
+            color: #FFF;
+            border-radius: var(--radius-sm);
+            padding: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .modal-tour-cta-box h5 {
+            font-size: 1.3rem;
+            color: #FFF;
+            margin-bottom: 4px;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+
+        .modal-tour-cta-box p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0;
+        }
+
+        /* Toast Notifications */
+        .toast-stack {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 3000;
+            pointer-events: none;
+        }
+
+        .toast-item {
+            background: #0A0E17;
+            color: #FFFFFF;
+            border-left: 4px solid var(--gold);
+            padding: 16px 22px;
+            border-radius: var(--radius-sm);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 0.88rem;
+            pointer-events: auto;
+            transform: translateX(120%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .toast-item.show {
+            transform: translateX(0);
+        }
+
+        .toast-item i {
+            color: var(--gold);
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1200px) {
+            .search-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .search-actions {
+                grid-column: span 2;
+            }
+            .locations-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .hero-stats-card {
+                max-width: 550px;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .calc-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .nav-menu {
+                position: fixed;
+                top: 75px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: #FFFFFF;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px 30px;
+                gap: 24px;
+                transition: var(--transition);
+                box-shadow: var(--shadow-lg);
+            }
+            .nav-menu.open {
+                left: 0;
+            }
+            .mobile-toggle {
+                display: block;
+            }
+            .properties-grid, .services-grid, .agents-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-card-wrap {
+                grid-template-columns: 1fr;
+            }
+            .advanced-drawer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .modal-specs-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .modal-tour-cta-box {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .top-bar {
+                display: none;
+            }
+            .search-grid {
+                grid-template-columns: 1fr;
+            }
+            .search-actions {
+                grid-column: 1;
+            }
+            .advanced-drawer {
+                grid-template-columns: 1fr;
+            }
+            .locations-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .calc-wrapper {
+                padding: 24px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement & Private Office Concierge Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span><i class="fas fa-crown"></i> PRIVATE OFFICE</span> Representing premier luxury estates & bespoke architectural assets worldwide
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:+12125550199"><i class="fas fa-phone-alt"></i> +1 (212) 555-0199</a>
+                <a href="#contact"><i class="fas fa-lock"></i> Off-Market Portal</a>
+                <span><i class="fas fa-globe"></i> Global Desk: NY &bull; LDN &bull; DXB</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header id="siteHeader">
+        <div class="container nav-container">
+            <a href="#home" class="brand-logo">
+                <div class="logo-emblem">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">PRIME PROPERTIES</span>
+                    <span class="logo-sub">Private Office & Luxury Estates</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#properties">Portfolio</a></li>
+                <li><a href="#locations">Prime Markets</a></li>
+                <li><a href="#about">The Firm</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#advisors">Private Wealth Advisors</a></li>
+                <li><a href="#calculator">Investment Calc</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <div class="saved-count-pill" id="savedFavoritesBtn" title="Saved Collection">
+                    <i class="fas fa-heart"></i>
+                    <span>Curated</span>
+                    <span class="saved-badge" id="favCount">0</span>
+                </div>
+                <a href="#contact" class="btn btn-gold btn-sm">Private Advisory</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-gem"></i> Curated Portfolio 2025/2026
+                    </div>
+                    <h1 class="hero-title">
+                        Exceptional Residences.<br>
+                        <em>Unrivaled Discretion.</em>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Prime Properties Private Office provides discreet representation for high-net-worth clients, architectural connoisseurs, and institutional investors acquiring trophy assets globally.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#properties" class="btn btn-gold">
+                            <i class="fas fa-compass"></i> Explore Collection
+                        </a>
+                        <a href="#contact" class="btn btn-outline-gold">
+                            <i class="fas fa-key"></i> Off-Market Inquiry
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-stats-card">
+                    <h4>
+                        <span>Private Office Performance</span>
+                        <i class="fas fa-chart-line" style="color: var(--gold);"></i>
+                    </h4>
+                    <p>Audited transactional excellence across premier international markets.</p>
+                    
+                    <div class="stats-mini-grid">
+                        <div class="stat-item">
+                            <div class="stat-num">$4.8B+</div>
+                            <div class="stat-lbl">Global Sales Volume</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">99.4%</div>
+                            <div class="stat-lbl">List-to-Sale Ratio</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">38 Days</div>
+                            <div class="stat-lbl">Avg. Trophy Closing</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">100%</div>
+                            <div class="stat-lbl">Client Discretion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Property Search Console -->
+    <div class="search-wrapper" id="searchConsole">
+        <div class="container">
+            <div class="search-console">
+                <div class="search-tabs">
+                    <button class="search-tab active" data-type="all">
+                        <i class="fas fa-border-all"></i> All Residences
+                    </button>
+                    <button class="search-tab" data-type="house">
+                        <i class="fas fa-house-chimney"></i> Estates & Villas
+                    </button>
+                    <button class="search-tab" data-type="apartment">
+                        <i class="fas fa-city"></i> Penthouses
+                    </button>
+                    <button class="search-tab" data-type="commercial">
+                        <i class="fas fa-building-wheat"></i> Commercial
+                    </button>
+                </div>
+
+                <div class="search-body">
+                    <form id="masterSearchForm" class="search-grid">
+                        <div class="input-block">
+                            <label><i class="fas fa-map-pin"></i> Location or Key Destination</label>
+                            <input type="text" id="searchLocation" class="input-field" placeholder="e.g. Malibu, Manhattan, Aspen...">
+                        </div>
+
+                        <div class="input-block">
+                            <label><i class="fas fa-tag"></i> Property Category</label>
+                            <select id="searchType" class="input-field">
+                                <option value="">Any Category</option>
+                                <option value="house">Estates & Waterfront Villas</option>
+                                <option value="apartment">Luxury Penthouses</option>
+                                <option value="commercial">Commercial / Financial</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label><i class="fas fa-coins"></i> Maximum Budget</label>
+                            <select id="searchMaxPrice" class="input-field">
+                                <option value="">No Maximum</option>
+                                <option value="1500000">Up to $1.5M</option>
+                                <option value="3000000">Up to $3.0M</option>
+                                <option value="5000000">Up to $5.0M</option>
+                                <option value="10000000">$10.0M+ (Ultra-Prime)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label><i class="fas fa-bed"></i> Minimum Bedrooms</label>
+                            <select id="searchBedrooms" class="input-field">
+                                <option value="">Any Bedrooms</option>
+                                <option value="3">3+ Suites</option>
+                                <option value="4">4+ Suites</option>
+                                <option value="5">5+ Suites</option>
+                            </select>
+                        </div>
+
+                        <div class="search-actions">
+                            <button type="submit" class="btn btn-gold btn-search">
+                                <i class="fas fa-sliders"></i> Filter Portfolio
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="search-drawer-toggle">
+                        <div class="quick-pills">
+                            <span class="quick-pills-label">Curated Tiers:</span>
+                            <button class="pill-btn active" data-filter="all">All</button>
+                            <button class="pill-btn" data-filter="waterfront">Waterfront</button>
+                            <button class="pill-btn" data-filter="penthouse">Penthouses</button>
+                            <button class="pill-btn" data-filter="historic">Historic</button>
+                            <button class="pill-btn" data-filter="commercial">Commercial</button>
+                        </div>
+                        <button class="toggle-filter-btn" id="toggleDrawerBtn">
+                            <span>Detailed Specifications</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="advanced-drawer" id="advancedDrawer">
+                        <div class="input-block">
+                            <label>Min. Living Area (Sq Ft)</label>
+                            <input type="number" id="searchMinSqft" class="input-field" placeholder="e.g. 3000">
+                        </div>
+                        <div class="input-block">
+                            <label>Minimum Bathrooms</label>
+                            <select id="searchBathrooms" class="input-field">
+                                <option value="">Any</option>
+                                <option value="2">2+ Baths</option>
+                                <option value="3">3+ Baths</option>
+                                <option value="4">4+ Baths</option>
+                            </select>
+                        </div>
+                        <div class="input-block">
+                            <label>Architectural Style</label>
+                            <select id="searchStyle" class="input-field">
+                                <option value="">All Architectural Styles</option>
+                                <option value="modern">Modern Minimalist</option>
+                                <option value="classic">Classic Revival</option>
+                                <option value="contemporary">Contemporary Luxury</option>
+                            </select>
+                        </div>
+                        <div class="input-block" style="display: flex; justify-content: flex-end; align-items: flex-end;">
+                            <button type="button" class="btn btn-outline-dark" id="resetFiltersBtn" style="height: 52px; width: 100%;">
+                                <i class="fas fa-rotate-left"></i> Reset Criteria
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Properties Portfolio -->
+    <section class="properties-section" id="properties">
+        <div class="container">
+            <div class="section-header-row">
+                <div class="section-title-wrap">
+                    <span class="eyebrow">Exclusive Portfolio</span>
+                    <h2>Distinguished Architectural Estates</h2>
+                    <p class="section-subtitle">
+                        Every residence in our private registry is vetted for superior craftsmanship, prime geographic positioning, and exceptional long-term capital preservation.
+                    </p>
+                </div>
+                <div>
+                    <a href="#contact" class="btn btn-outline-dark">Request Off-Market Access</a>
+                </div>
+            </div>
+
+            <div class="filter-toolbar">
+                <div class="results-count" id="resultsCount">
+                    Showing <strong>6</strong> premier properties
+                </div>
+                <div class="toolbar-controls">
+                    <label for="sortSelector" style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);">Sort By:</label>
+                    <select id="sortSelector" class="sort-select">
+                        <option value="featured">Featured First</option>
+                        <option value="price-desc">Price: Highest to Lowest</option>
+                        <option value="price-asc">Price: Lowest to Highest</option>
+                        <option value="sqft-desc">Living Area: Largest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- Dynamically populated with enhanced luxury cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Prime Markets / Neighborhoods Showcase -->
+    <section class="locations-section" id="locations">
+        <div class="container">
+            <div class="section-header-row">
+                <div class="section-title-wrap">
+                    <span class="eyebrow">Global Footprint</span>
+                    <h2>Iconic Destinations & Prime Markets</h2>
+                    <p class="section-subtitle">
+                        Our private advisory team operates in the most sought-after enclaves, offering localized market intelligence with global transaction capability.
+                    </p>
+                </div>
+            </div>
+
+            <div class="locations-grid">
+                <div class="location-card" onclick="filterByLocationCity('Manhattan')">
+                    <img src="downtown.jpg" alt="Manhattan New York" class="location-img">
+                    <div class="location-overlay">
+                        <span class="location-tag">New York</span>
+                        <h3 class="location-name">Manhattan</h3>
+                        <span class="location-count"><i class="fas fa-arrow-right"></i> 14 Active Residencies</span>
+                    </div>
+                </div>
+
+                <div class="location-card" onclick="filterByLocationCity('Malibu')">
+                    <img src="modern.jpg" alt="Malibu California" class="location-img">
+                    <div class="location-overlay">
+                        <span class="location-tag">California Coast</span>
+                        <h3 class="location-name">Malibu</h3>
+                        <span class="location-count"><i class="fas fa-arrow-right"></i> 9 Waterfront Villas</span>
+                    </div>
+                </div>
+
+                <div class="location-card" onclick="filterByLocationCity('Aspen')">
+                    <img src="mountain.jpg" alt="Aspen Colorado" class="location-img">
+                    <div class="location-overlay">
+                        <span class="location-tag">Colorado</span>
+                        <h3 class="location-name">Aspen</h3>
+                        <span class="location-count"><i class="fas fa-arrow-right"></i> 6 Mountain Sanctuaries</span>
+                    </div>
+                </div>
+
+                <div class="location-card" onclick="filterByLocationCity('Chicago')">
+                    <img src="urban.jpg" alt="Chicago Commercial" class="location-img">
+                    <div class="location-overlay">
+                        <span class="location-tag">Illinois</span>
+                        <h3 class="location-name">Chicago</h3>
+                        <span class="location-count"><i class="fas fa-arrow-right"></i> 11 Commercial Portfolios</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial The Firm / Private Office Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-media-stack">
+                    <img src="team.jpg" alt="Prime Properties Leadership Team" class="about-img-main">
+                    <div class="about-seal-card">
+                        <div class="seal-year">20+ Years</div>
+                        <div class="seal-text">Serving high-net-worth families, family offices, and distinguished international collectors since 2003.</div>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <span class="eyebrow" style="color: var(--gold);">The Private Office</span>
+                    <h2>Built on Discretion. Grounded in Integrity.</h2>
+                    <p>
+                        Prime Properties is a privately held luxury real estate advisory firm dedicated to the bespoke acquisition, marketing, and asset management of the world’s finest architectural properties.
+                    </p>
+                    <p>
+                        Unlike traditional brokerages focused on mass volume, our Private Office acts as trusted fiduciaries for a select roster of principals. We combine nuanced local zoning expertise, proprietary off-market syndication networks, and rigorous financial structuring.
+                    </p>
+
+                    <div class="pillars-grid">
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-shield-halved"></i></div>
+                            <h4 class="pillar-title">Fiduciary Discretion</h4>
+                            <p class="pillar-desc">Strict confidentiality protocols safeguarding principal identities and asset privacy.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-network-wired"></i></div>
+                            <h4 class="pillar-title">Private Off-Market Network</h4>
+                            <p class="pillar-desc">Access to multi-million dollar trophy residences never published on public MLS systems.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-chart-pie"></i></div>
+                            <h4 class="pillar-title">Institutional Valuation</h4>
+                            <p class="pillar-desc">Comprehensive comparative analysis utilizing econometric models and verified comparables.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-scale-balanced"></i></div>
+                            <h4 class="pillar-title">Complex Structuring</h4>
+                            <p class="pillar-desc">Cross-border tax efficiency, trust holdings, 1031 exchanges, and bespoke contract terms.</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-gold">
+                        <i class="fas fa-user-shield"></i> Engage Our Private Office
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bespoke Advisory Services -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header-row">
+                <div class="section-title-wrap">
+                    <span class="eyebrow">Comprehensive Capabilities</span>
+                    <h2>Tailored Real Estate Advisory</h2>
+                    <p class="section-subtitle">
+                        End-to-end advisory solutions calibrated for family offices, developers, and discerning luxury investors.
+                    </p>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fas fa-compass-drafting"></i>
+                    </div>
+                    <h3>Bespoke Acquisition</h3>
+                    <p>We source, evaluate, and negotiate off-market and published estates that fulfill exacting aesthetic, spatial, and financial criteria.</p>
+                    <a href="#contact" class="service-link">Consult Private Broker <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Architectural Valuation</h3>
+                    <p>Rigorous econometric appraisal accounting for architectural pedigree, rarity value, bespoke finishings, and replacement cost.</p>
+                    <a href="#contact" class="service-link">Request Valuation <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fas fa-handshake-angle"></i>
+                    </div>
+                    <h3>Trophy Asset Disposition</h3>
+                    <p>Tailored global marketing campaigns leveraging elite architectural photography, international private wealth roadshows, and discretion.</p>
+                    <a href="#contact" class="service-link">List With Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial & Development</h3>
+                    <p>Institutional advisory on high-density commercial towers, multi-family acquisitions, and joint venture development syndication.</p>
+                    <a href="#contact" class="service-link">Explore Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Private Estate Management</h3>
+                    <p>Comprehensive white-glove management for secondary homes, concierge leasing, asset preservation, and high-security compliance.</p>
+                    <a href="#contact" class="service-link">Management Solutions <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h3>Legal & Tax Optimization</h3>
+                    <p>Coordination with your legal fiduciaries for cross-border transactions, tax-sheltered 1031 exchanges, and specialized escrow arrangements.</p>
+                    <a href="#contact" class="service-link">Schedule Briefing <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Modeling & Mortgage Suite -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="calc-wrapper">
+                <div class="section-title-wrap" style="margin-bottom: 36px;">
+                    <span class="eyebrow">Financial Advisory Suite</span>
+                    <h2>Mortgage & Capital Outlay Estimation</h2>
+                    <p class="section-subtitle">
+                        Simulate monthly financing obligations, amortization schedules, and capital reserves for luxury real estate acquisitions.
+                    </p>
+                </div>
+
+                <div class="calc-grid">
+                    <div class="calc-controls-wrap">
+                        <div class="calc-slider-block">
+                            <div class="slider-head">
+                                <span class="slider-title">Estimated Property Price</span>
+                                <span class="slider-display-val" id="calcPriceDisplay">$2,850,000</span>
+                            </div>
+                            <input type="range" id="calcPrice" class="range-slider" min="500000" max="10000000" step="50000" value="2850000">
+                        </div>
+
+                        <div class="calc-slider-block">
+                            <div class="slider-head">
+                                <span class="slider-title">Down Payment Equity (20%)</span>
+                                <span class="slider-display-val" id="calcDownDisplay">$570,000</span>
+                            </div>
+                            <input type="range" id="calcDown" class="range-slider" min="100000" max="4000000" step="25000" value="570000">
+                        </div>
+
+                        <div class="calc-slider-block">
+                            <div class="slider-head">
+                                <span class="slider-title">Financing Interest Rate</span>
+                                <span class="slider-display-val" id="calcRateDisplay">5.25%</span>
+                            </div>
+                            <input type="range" id="calcRate" class="range-slider" min="2.5" max="9.5" step="0.1" value="5.25">
+                        </div>
+
+                        <div class="calc-slider-block">
+                            <div class="slider-head">
+                                <span class="slider-title">Loan Term Structure</span>
+                                <span class="slider-display-val" id="calcTermDisplay">30 Years</span>
+                            </div>
+                            <input type="range" id="calcTerm" class="range-slider" min="10" max="30" step="5" value="30">
+                        </div>
+                    </div>
+
+                    <div class="calc-summary-panel">
+                        <div class="calc-monthly-label">Estimated Monthly Commitment</div>
+                        <div class="calc-monthly-amount" id="calcTotalMonthly">$15,480</div>
+
+                        <div class="calc-breakdown-bar">
+                            <div class="breakdown-pi" id="barPI" title="Principal & Interest"></div>
+                            <div class="breakdown-tax" id="barTax" title="Property Tax"></div>
+                            <div class="breakdown-ins" id="barIns" title="Hazard Insurance"></div>
+                            <div class="breakdown-hoa" id="barHOA" title="HOA & Reserve"></div>
+                        </div>
+
+                        <ul class="breakdown-list">
+                            <li class="breakdown-item">
+                                <span class="breakdown-key"><span class="breakdown-dot" style="background: var(--primary);"></span> Principal & Interest:</span>
+                                <span class="breakdown-val" id="valPI">$12,580</span>
+                            </li>
+                            <li class="breakdown-item">
+                                <span class="breakdown-key"><span class="breakdown-dot" style="background: var(--gold);"></span> Property Taxes (Est. 1%):</span>
+                                <span class="breakdown-val" id="valTax">$2,375</span>
+                            </li>
+                            <li class="breakdown-item">
+                                <span class="breakdown-key"><span class="breakdown-dot" style="background: #64748B;"></span> Hazard Insurance (Est. 0.3%):</span>
+                                <span class="breakdown-val" id="valIns">$712</span>
+                            </li>
+                            <li class="breakdown-item">
+                                <span class="breakdown-key"><span class="breakdown-dot" style="background: #94A3B8;"></span> Luxury HOA / Reserve:</span>
+                                <span class="breakdown-val" id="valHOA">$650</span>
+                            </li>
+                        </ul>
+
+                        <button class="btn btn-gold" style="width: 100%;" onclick="openPrivateTourModal('Mortgage Pre-Approval Consultation')">
+                            <i class="fas fa-file-invoice-dollar"></i> Connect With Private Banker
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Managing Partners / Private Wealth Advisors -->
+    <section class="agents-section" id="advisors">
+        <div class="container">
+            <div class="section-header-row">
+                <div class="section-title-wrap">
+                    <span class="eyebrow">The Leadership</span>
+                    <h2>Private Wealth Advisors</h2>
+                    <p class="section-subtitle">
+                        Industry-recognized managing partners possessing multi-decade transactional pedigrees in prime markets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="agents-grid">
+                <!-- Agent 1 -->
+                <div class="agent-card">
+                    <div class="agent-headshot-wrap">
+                        <img src="sarah.jpg" alt="Sarah Johnson" class="agent-img">
+                        <div class="agent-award-tag"><i class="fas fa-award"></i> Wall Street Journal Top 50</div>
+                    </div>
+                    <div class="agent-info">
+                        <h3 class="agent-name">Sarah Johnson</h3>
+                        <div class="agent-role">Managing Director &bull; Coastal Estates</div>
+                        <p class="agent-bio">Over 18 years representing trophy oceanfront compounds across Malibu, Newport Beach, and Santa Barbara.</p>
+                        
+                        <div class="agent-stats-bar">
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">$1.4B+</span>
+                                <span class="agent-stat-label">Career Volume</span>
+                            </div>
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">18 Yrs</span>
+                                <span class="agent-stat-label">Experience</span>
+                            </div>
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">99.7%</span>
+                                <span class="agent-stat-label">Client Retention</span>
+                            </div>
+                        </div>
+
+                        <div class="agent-actions">
+                            <a href="tel:+12125550199" class="agent-btn" title="Direct Line"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:s.johnson@primeproperties.com" class="agent-btn" title="Confidential Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="agent-btn" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agent 2 -->
+                <div class="agent-card">
+                    <div class="agent-headshot-wrap">
+                        <img src="michal.jpg" alt="Michael Chen" class="agent-img">
+                        <div class="agent-award-tag"><i class="fas fa-crown"></i> Institutional Capital Leader</div>
+                    </div>
+                    <div class="agent-info">
+                        <h3 class="agent-name">Michael Chen</h3>
+                        <div class="agent-role">Partner &bull; Institutional & Commercial</div>
+                        <p class="agent-bio">Specialist in commercial developments, family office syndications, and high-density urban acquisitions.</p>
+                        
+                        <div class="agent-stats-bar">
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">$2.1B+</span>
+                                <span class="agent-stat-label">Career Volume</span>
+                            </div>
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">22 Yrs</span>
+                                <span class="agent-stat-label">Experience</span>
+                            </div>
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">100%</span>
+                                <span class="agent-stat-label">Discretion Rate</span>
+                            </div>
+                        </div>
+
+                        <div class="agent-actions">
+                            <a href="tel:+12125550199" class="agent-btn" title="Direct Line"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:m.chen@primeproperties.com" class="agent-btn" title="Confidential Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="agent-btn" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agent 3 -->
+                <div class="agent-card">
+                    <div class="agent-headshot-wrap">
+                        <img src="ema.jpg" alt="Emma Rodriguez" class="agent-img">
+                        <div class="agent-award-tag"><i class="fas fa-star"></i> Architectural Digest Notable</div>
+                    </div>
+                    <div class="agent-info">
+                        <h3 class="agent-name">Emma Rodriguez</h3>
+                        <div class="agent-role">Principal &bull; Urban Penthouses & Historic</div>
+                        <p class="agent-bio">Renowned for curating iconic penthouses, historic brownstones, and architectural landmarks in Manhattan and Boston.</p>
+                        
+                        <div class="agent-stats-bar">
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">$1.2B+</span>
+                                <span class="agent-stat-label">Career Volume</span>
+                            </div>
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">14 Yrs</span>
+                                <span class="agent-stat-label">Experience</span>
+                            </div>
+                            <div class="agent-stat-col">
+                                <span class="agent-stat-val">4.9 / 5</span>
+                                <span class="agent-stat-label">Rating</span>
+                            </div>
+                        </div>
+
+                        <div class="agent-actions">
+                            <a href="tel:+12125550199" class="agent-btn" title="Direct Line"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:e.rodriguez@primeproperties.com" class="agent-btn" title="Confidential Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="agent-btn" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Press Strip -->
+    <div class="press-strip">
+        <div class="container">
+            <div class="press-grid">
+                <span class="press-logo-text">Financial Times</span>
+                <span class="press-logo-text">Architectural Digest</span>
+                <span class="press-logo-text">Forbes Global</span>
+                <span class="press-logo-text">Robb Report</span>
+                <span class="press-logo-text">Wall Street Journal</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Private Consultation / Contact Concierge -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card-wrap">
+                <div class="contact-sidebar">
+                    <div>
+                        <span class="eyebrow" style="color: var(--gold-light);">Confidential Desk</span>
+                        <h3>Initiate Private Dialogue</h3>
+                        <p>Our Private Office advisors are available for bespoke acquisitions, discreet estate evaluations, and off-market mandates.</p>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-icon-bubble">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h5>Headquarters &bull; Private Office</h5>
+                                    <span>767 Fifth Avenue, 38th Floor<br>New York, NY 10153</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon-bubble">
+                                    <i class="fas fa-phone-volume"></i>
+                                </div>
+                                <div>
+                                    <h5>Direct Private Line</h5>
+                                    <span>+1 (212) 555-0199<br>Mon-Sat: 8:00 AM - 8:00 PM EST</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon-bubble">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Encrypted Inquiries</h5>
+                                    <span>privateoffice@primeproperties.com<br>Strict NDA Protocol Adhered</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                        <small style="color: rgba(255, 255, 255, 0.5); font-size: 0.76rem;">
+                            <i class="fas fa-lock"></i> All communications are treated with strict fiduciary confidentiality under attorney-client and real estate brokerage privilege.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <h4>Request Private Consultation</h4>
+                    <p>Kindly complete the confidential inquiry form below. A senior managing director will reach out within 4 business hours.</p>
+
+                    <form id="leadContactForm">
+                        <div class="form-grid-2">
+                            <div class="input-block">
+                                <label>Full Name *</label>
+                                <input type="text" id="contactName" class="input-field" placeholder="e.g. Lord Alexander Wright" required>
+                            </div>
+                            <div class="input-block">
+                                <label>Email Address *</label>
+                                <input type="email" id="contactEmail" class="input-field" placeholder="e.g. alexander@wrightfamily.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="input-block">
+                                <label>Telephone Number</label>
+                                <input type="tel" id="contactPhone" class="input-field" placeholder="+1 (555) 000-0000">
+                            </div>
+                            <div class="input-block">
+                                <label>Nature of Inquiry</label>
+                                <select id="contactNature" class="input-field">
+                                    <option value="acquisition">Private Estate Acquisition</option>
+                                    <option value="disposition">Trophy Asset Representation / Sale</option>
+                                    <option value="offmarket">Exclusive Off-Market Sourcing</option>
+                                    <option value="commercial">Commercial Portfolio Advisory</option>
+                                    <option value="valuation">Certified Asset Valuation</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-full input-block">
+                            <label>Target Investment Horizon / Budget</label>
+                            <select id="contactBudget" class="input-field">
+                                <option value="2-5m">$2,000,000 &ndash; $5,000,000</option>
+                                <option value="5-10m">$5,000,000 &ndash; $10,000,000</option>
+                                <option value="10-25m">$10,000,000 &ndash; $25,000,000</option>
+                                <option value="25m+">$25,000,000+ (Ultra-Prime / Family Office)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-full input-block">
+                            <label>Specific Architectural Requirements or Notes *</label>
+                            <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Detail preferred geographic locations, architectural styles, privacy requirements, or target closing timeline..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold" style="width: 100%; height: 54px;">
+                            <i class="fas fa-paper-plane"></i> Transmit Confidential Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="brand-logo" style="margin-bottom: 14px;">
+                        <div class="logo-emblem">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title" style="color: #FFF;">PRIME PROPERTIES</span>
+                            <span class="logo-sub">Private Office & Luxury Estates</span>
+                        </div>
+                    </a>
+                    <p>
+                        Representing iconic architectural assets, coastal sanctuararies, and ultra-prime penthouses. Committed to discretion, institutional precision, and long-term fiduciary alignment.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://instagram.com" class="footer-social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="footer-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" class="footer-social-btn" title="YouTube Showcase"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com" class="footer-social-btn" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Prime Portfolios</h5>
+                    <ul class="footer-links">
+                        <li><a href="#properties" onclick="filterByLocationCity('Malibu')"><i class="fas fa-angle-right"></i> Malibu Waterfront</a></li>
+                        <li><a href="#properties" onclick="filterByLocationCity('Manhattan')"><i class="fas fa-angle-right"></i> Manhattan Penthouses</a></li>
+                        <li><a href="#properties" onclick="filterByLocationCity('Aspen')"><i class="fas fa-angle-right"></i> Aspen Alpine Lodges</a></li>
+                        <li><a href="#properties" onclick="filterByLocationCity('Chicago')"><i class="fas fa-angle-right"></i> Chicago Commercial</a></li>
+                        <li><a href="#contact"><i class="fas fa-angle-right"></i> Private Off-Market Portal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>The Firm</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about"><i class="fas fa-angle-right"></i> About The Private Office</a></li>
+                        <li><a href="#services"><i class="fas fa-angle-right"></i> Fiduciary Capabilities</a></li>
+                        <li><a href="#advisors"><i class="fas fa-angle-right"></i> Senior Managing Partners</a></li>
+                        <li><a href="#calculator"><i class="fas fa-angle-right"></i> Capital Outlay Modeling</a></li>
+                        <li><a href="#contact"><i class="fas fa-angle-right"></i> Career Opportunities</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-newsletter">
+                    <h5>Private Intelligence</h5>
+                    <p>Subscribe to our quarterly White Paper on global luxury capital flows, sovereign wealth allocations, and trophy residential valuations.</p>
+                    <form id="newsletterForm" class="newsletter-box">
+                        <input type="email" id="newsletterEmail" placeholder="Enter confidential email..." required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <small style="display: block; margin-top: 10px; color: rgba(255, 255, 255, 0.4); font-size: 0.74rem;">
+                        <i class="fas fa-lock"></i> Strict zero-spam policy. Unsubscribe anytime.
+                    </small>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2025 Prime Properties Real Estate Private Office Inc. All rights reserved. Equal Housing Opportunity.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#contact">Privacy Policy</a>
+                    <a href="#contact">Terms of Fiduciary Engagement</a>
+                    <a href="#contact">Accessibility</a>
+                    <a href="#contact">Regulatory MLS Disclosures</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Luxury Property Details & Private Viewing Modal -->
+    <div class="modal-backdrop" id="propertyModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-hero-img-wrap">
+                <img id="modalImg" src="modern.jpg" alt="Property Image" class="modal-hero-img">
+            </div>
+            <div class="modal-inner-content">
+                <div class="modal-header-row">
+                    <div>
+                        <span class="eyebrow" id="modalTag">Waterfront Architectural</span>
+                        <h3 class="modal-prop-title" id="modalTitle">Modern Waterfront Villa</h3>
+                        <div class="card-location" id="modalLocation"><i class="fas fa-map-marker-alt"></i> Malibu, CA</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="modal-prop-price" id="modalPrice">$2,850,000</div>
+                        <span class="badge-status badge-exclusive" id="modalStatus">For Sale</span>
+                    </div>
+                </div>
+
+                <div class="modal-specs-grid">
+                    <div class="modal-spec-col">
+                        <div class="modal-spec-val" id="modalBeds">5</div>
+                        <div class="modal-spec-label">Bedrooms</div>
+                    </div>
+                    <div class="modal-spec-col">
+                        <div class="modal-spec-val" id="modalBaths">6</div>
+                        <div class="modal-spec-label">Bathrooms</div>
+                    </div>
+                    <div class="modal-spec-col">
+                        <div class="modal-spec-val" id="modalSqft">4,500</div>
+                        <div class="modal-spec-label">Living Sq Ft</div>
+                    </div>
+                    <div class="modal-spec-col">
+                        <div class="modal-spec-val" id="modalType">Estate</div>
+                        <div class="modal-spec-label">Property Class</div>
+                    </div>
+                </div>
+
+                <div class="modal-description" id="modalDesc">
+                    Stunning contemporary villa with panoramic ocean views, infinity edge pool, and integrated smart home automation. Features custom Italian marble, temperature-controlled wine vault, and expansive private terrace.
+                </div>
+
+                <div class="modal-tour-cta-box">
+                    <div>
+                        <h5>Schedule a Private Viewing</h5>
+                        <p>Accompanied by a senior managing partner. Chauffeured transit or private virtual walkthrough available.</p>
+                    </div>
+                    <button class="btn btn-gold btn-sm" id="btnBookViewing">
+                        <i class="fas fa-calendar-check"></i> Book Viewing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-stack" id="toastStack"></div>
+
+    <!-- Application Engine -->
+    <script>
+        // High-Resolution Property Registry
+        const properties = [
+            {
+                id: 1,
+                name: "The Pacifica Oceanfront Villa",
+                categoryTag: "Waterfront Architectural",
+                description: "Masterpiece contemporary oceanfront residence commanding uninterrupted 270-degree Pacific horizons. Features an infinity glass pool, subterranean wine gallery, Crestron automation, and private beach access.",
+                price: "$2,850,000",
+                numericPrice: 2850000,
+                location: "Malibu, CA",
+                city: "Malibu",
+                type: "house",
+                bedrooms: 5,
+                bathrooms: 6,
+                sqft: 4500,
+                status: "Exclusive",
+                image: "modern.jpg",
+                views: "1.4k views this week",
+                tag: "waterfront"
+            },
+            {
+                id: 2,
+                name: "The Crown Penthouse at 432 Park",
+                categoryTag: "Sky Residence",
+                description: "Commanding full-floor aerie occupying the pinnacle of Manhattan's skyline. Soaring 14-foot ceilings, floor-to-ceiling acoustic glass, private dual elevator vestibule, and panoramic Central Park vistas.",
+                price: "$3,500,000",
+                numericPrice: 3500000,
+                location: "Manhattan, NY",
+                city: "Manhattan",
+                type: "apartment",
+                bedrooms: 4,
+                bathrooms: 4.5,
+                sqft: 3800,
+                status: "Trophy Asset",
+                image: "downtown.jpg",
+                views: "2.1k views this week",
+                tag: "penthouse"
+            },
+            {
+                id: 3,
+                name: "Aspen Alpine Sanctuary",
+                categoryTag: "Mountain Estate",
+                description: "Secluded 12-acre ski-in / ski-out mountain sanctuary. Hand-hewn timber beams, radiant limestone thermal flooring, heated infinity spa, and cathedral glass walls framing Colorado's highest peaks.",
+                price: "$1,950,000",
+                numericPrice: 1950000,
+                location: "Aspen, CO",
+                city: "Aspen",
+                type: "house",
+                bedrooms: 6,
+                bathrooms: 5,
+                sqft: 5200,
+                status: "Just Listed",
+                image: "mountain.jpg",
+                views: "980 views this week",
+                tag: "waterfront"
+            },
+            {
+                id: 4,
+                name: "Financial District Corporate Tower",
+                categoryTag: "Prime Commercial",
+                description: "Class-A institutional commercial asset in the heart of Chicago's financial district. Boasts LEED Platinum certification, high-speed fiber backbone, and robust multi-tenant corporate leases in place.",
+                price: "$5,200,000",
+                numericPrice: 5200000,
+                location: "Chicago, IL",
+                city: "Chicago",
+                type: "commercial",
+                bedrooms: 0,
+                bathrooms: 8,
+                sqft: 12000,
+                status: "Institutional",
+                image: "urban.jpg",
+                views: "740 views this week",
+                tag: "commercial"
+            },
+            {
+                id: 5,
+                name: "Beacon Hill Historic Townhouse",
+                categoryTag: "Historic Landmark",
+                description: "Impeccably restored 19th-century Federal townhouse combining period architectural moulding with state-of-the-art climate zoning, private elevator, private English garden, and chef's scullery.",
+                price: "$1,250,000",
+                numericPrice: 1250000,
+                location: "Boston, MA",
+                city: "Boston",
+                type: "house",
+                bedrooms: 4,
+                bathrooms: 3.5,
+                sqft: 3200,
+                status: "Rare Heritage",
+                image: "histooric.jpg",
+                views: "1.1k views this week",
+                tag: "historic"
+            },
+            {
+                id: 6,
+                name: "Tahoe Waterside Glass Pavilion",
+                categoryTag: "Lakeside Architectural",
+                description: "Dramatic steel-and-glass waterfront sanctuary perched directly on Lake Tahoe's emerald shores. Includes deep-water private pier, heated motor court, boat hoist, and detached guest chalet.",
+                price: "$850,000",
+                numericPrice: 850000,
+                location: "Lake Tahoe, CA",
+                city: "Tahoe",
+                type: "house",
+                bedrooms: 3,
+                bathrooms: 2,
+                sqft: 1800,
+                status: "Exclusive",
+                image: "hero.jpg",
+                views: "1.8k views this week",
+                tag: "waterfront"
+            }
+        ];
+
+        // State Store
+        let savedFavorites = JSON.parse(localStorage.getItem('prime_favorites') || '[]');
+        let currentFilterList = [...properties];
+
+        // Toast Notification System
+        function showToast(message, icon = 'fa-check-circle') {
+            const stack = document.getElementById('toastStack');
+            const toast = document.createElement('div');
+            toast.className = 'toast-item';
+            toast.innerHTML = `<i class="fas ${icon}"></i><span>${message}</span>`;
+            stack.appendChild(toast);
+
+            setTimeout(() => toast.classList.add('show'), 20);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 400);
+            }, 4200);
+        }
+
+        // Header Scroll & Mobile Nav
+        const siteHeader = document.getElementById('siteHeader');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                siteHeader.classList.add('scrolled');
+            } else {
+                siteHeader.classList.remove('scrolled');
+            }
+        });
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            mobileToggle.innerHTML = navMenu.classList.contains('open') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Advanced Search Toggle Drawer
+        const toggleDrawerBtn = document.getElementById('toggleDrawerBtn');
+        const advancedDrawer = document.getElementById('advancedDrawer');
+
+        toggleDrawerBtn.addEventListener('click', () => {
+            advancedDrawer.classList.toggle('show');
+            toggleDrawerBtn.classList.toggle('open');
+        });
+
+        // Render Properties in Grid
+        function renderProperties(list) {
+            const grid = document.getElementById('propertiesGrid');
+            const countLabel = document.getElementById('resultsCount');
+            grid.innerHTML = '';
+
+            countLabel.innerHTML = `Showing <strong>${list.length}</strong> premier ${list.length === 1 ? 'property' : 'properties'}`;
+
+            if (list.length === 0) {
+                grid.innerHTML = `
+                    <div style="grid-column: 1/-1; background: #FFF; border: 1px solid var(--border-color); border-radius: var(--radius-md); text-align: center; padding: 60px 20px;">
+                        <i class="fas fa-search" style="font-size: 2.5rem; color: var(--gold); margin-bottom: 16px;"></i>
+                        <h3 style="margin-bottom: 8px;">No Current Registrations Match Your Criteria</h3>
+                        <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 24px;">Our Private Office holds discreet off-market properties not published publicly. Inquire directly with an advisor.</p>
+                        <button class="btn btn-gold btn-sm" onclick="resetAllFilters()"><i class="fas fa-rotate-left"></i> Reset All Search Filters</button>
+                    </div>
+                `;
+                return;
+            }
+
+            list.forEach(prop => {
+                const isFav = savedFavorites.includes(prop.id);
+                const card = document.createElement('div');
+                card.className = 'property-card';
+                card.setAttribute('data-id', prop.id);
+
+                card.innerHTML = `
+                    <div class="card-media-wrap">
+                        <img src="${prop.image}" alt="${prop.name}" class="card-img" loading="lazy">
+                        <div class="card-overlay-badges">
+                            <span class="badge-status ${prop.status === 'Exclusive' ? 'badge-exclusive' : ''}">
+                                ${prop.status}
+                            </span>
+                            <button class="btn-fav ${isFav ? 'active' : ''}" onclick="toggleFavorite(${prop.id}, event)" title="${isFav ? 'Remove from Curated' : 'Save to Curated'}">
+                                <i class="${isFav ? 'fas fa-heart' : 'far fa-heart'}"></i>
+                            </button>
+                        </div>
+                        <div class="card-view-count">
+                            <i class="fas fa-eye"></i> ${prop.views}
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-price-row">
+                            <span class="card-price">${prop.price}</span>
+                            <span class="card-price-meta">${prop.type === 'commercial' ? 'Commercial MLS' : 'Residential MLS'}</span>
+                        </div>
+                        <h3 class="card-title">${prop.name}</h3>
+                        <div class="card-location">
+                            <i class="fas fa-map-pin"></i> ${prop.location}
+                        </div>
+                        <p class="card-desc">${prop.description}</p>
+                        <div class="card-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-bed"></i>
+                                <span>${prop.bedrooms > 0 ? prop.bedrooms + ' Beds' : 'Office Flrs'}</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bath"></i>
+                                <span>${prop.bathrooms} Baths</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-vector-square"></i>
+                                <span>${prop.sqft.toLocaleString()} sq ft</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-dark btn-card-primary" onclick="openPropertyModal(${prop.id})">
+                                <i class="fas fa-eye"></i> View Dossier
+                            </button>
+                            <button class="btn-card-tour" onclick="openPrivateTourModal('${prop.name.replace(/'/g, "\\'")}')" title="Schedule Private Viewing">
+                                <i class="fas fa-calendar-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Favorites Handling
+        function toggleFavorite(id, event) {
+            if (event) event.stopPropagation();
+            const index = savedFavorites.indexOf(id);
+            const prop = properties.find(p => p.id === id);
+
+            if (index > -1) {
+                savedFavorites.splice(index, 1);
+                showToast(`Removed "${prop.name}" from your curated portfolio.`);
+            } else {
+                savedFavorites.push(id);
+                showToast(`Saved "${prop.name}" to your private portfolio.`, 'fa-heart');
+            }
+
+            localStorage.setItem('prime_favorites', JSON.stringify(savedFavorites));
+            updateFavBadge();
+            renderProperties(currentFilterList);
+        }
+
+        function updateFavBadge() {
+            const badge = document.getElementById('favCount');
+            badge.textContent = savedFavorites.length;
+        }
+
+        document.getElementById('savedFavoritesBtn').addEventListener('click', () => {
+            if (savedFavorites.length === 0) {
+                showToast('You have not saved any properties yet. Click the heart icon on any residence to curate.', 'fa-info-circle');
+                return;
+            }
+            const favProperties = properties.filter(p => savedFavorites.includes(p.id));
+            currentFilterList = favProperties;
+            renderProperties(favProperties);
+            showToast(`Displaying your ${favProperties.length} saved curated residences.`);
+            document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Filter and Search Engine
+        function executeSearch() {
+            const loc = document.getElementById('searchLocation').value.toLowerCase().trim();
+            const type = document.getElementById('searchType').value;
+            const maxPrice = document.getElementById('searchMaxPrice').value;
+            const bedrooms = document.getElementById('searchBedrooms').value;
+            const minSqft = document.getElementById('searchMinSqft').value;
+            const bathrooms = document.getElementById('searchBathrooms').value;
+
+            let result = properties.filter(item => {
+                if (loc && !item.location.toLowerCase().includes(loc) && !item.name.toLowerCase().includes(loc)) {
+                    return false;
+                }
+                if (type && item.type !== type) {
+                    return false;
+                }
+                if (maxPrice && item.numericPrice > parseInt(maxPrice)) {
+                    return false;
+                }
+                if (bedrooms && item.bedrooms < parseInt(bedrooms)) {
+                    return false;
+                }
+                if (minSqft && item.sqft < parseInt(minSqft)) {
+                    return false;
+                }
+                if (bathrooms && item.bathrooms < parseFloat(bathrooms)) {
+                    return false;
+                }
+                return true;
+            });
+
+            applySorting(result);
+        }
+
+        document.getElementById('masterSearchForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            executeSearch();
+            document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Quick Search Tabs
+        document.querySelectorAll('.search-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.search-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const category = tab.getAttribute('data-type');
+                
+                if (category === 'all') {
+                    document.getElementById('searchType').value = '';
+                } else {
+                    document.getElementById('searchType').value = category;
+                }
+                executeSearch();
+            });
+        });
+
+        // Quick Category Pills
+        document.querySelectorAll('.pill-btn').forEach(pill => {
+            pill.addEventListener('click', () => {
+                document.querySelectorAll('.pill-btn').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                const filterTag = pill.getAttribute('data-filter');
+
+                if (filterTag === 'all') {
+                    currentFilterList = [...properties];
+                } else {
+                    currentFilterList = properties.filter(p => p.tag === filterTag || p.type === filterTag);
+                }
+                applySorting(currentFilterList);
+            });
+        });
+
+        // Sort Control
+        document.getElementById('sortSelector').addEventListener('change', (e) => {
+            applySorting(currentFilterList);
+        });
+
+        function applySorting(list) {
+            const sortMode = document.getElementById('sortSelector').value;
+            let sorted = [...list];
+
+            if (sortMode === 'price-desc') {
+                sorted.sort((a, b) => b.numericPrice - a.numericPrice);
+            } else if (sortMode === 'price-asc') {
+                sorted.sort((a, b) => a.numericPrice - b.numericPrice);
+            } else if (sortMode === 'sqft-desc') {
+                sorted.sort((a, b) => b.sqft - a.sqft);
+            }
+
+            currentFilterList = sorted;
+            renderProperties(sorted);
+        }
+
+        function resetAllFilters() {
+            document.getElementById('masterSearchForm').reset();
+            document.getElementById('searchMinSqft').value = '';
+            document.getElementById('searchBathrooms').value = '';
+            document.getElementById('searchStyle').value = '';
+            document.querySelectorAll('.search-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector('.search-tab[data-type="all"]').classList.add('active');
+            document.querySelectorAll('.pill-btn').forEach(p => p.classList.remove('active'));
+            document.querySelector('.pill-btn[data-filter="all"]').classList.add('active');
+            currentFilterList = [...properties];
+            applySorting(currentFilterList);
+            showToast('All search filters reset.', 'fa-rotate-left');
+        }
+
+        document.getElementById('resetFiltersBtn').addEventListener('click', resetAllFilters);
+
+        // Helper filter from Location Cards
+        function filterByLocationCity(cityName) {
+            document.getElementById('searchLocation').value = cityName;
+            executeSearch();
+            document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Filtering for premier assets in ${cityName}.`);
+        }
+
+        // Luxury Modal Dossier
+        const propertyModal = document.getElementById('propertyModal');
+        const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+        function openPropertyModal(id) {
+            const prop = properties.find(p => p.id === id);
+            if (!prop) return;
+
+            document.getElementById('modalImg').src = prop.image;
+            document.getElementById('modalImg').alt = prop.name;
+            document.getElementById('modalTag').textContent = prop.categoryTag;
+            document.getElementById('modalTitle').textContent = prop.name;
+            document.getElementById('modalLocation').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${prop.location}`;
+            document.getElementById('modalPrice').textContent = prop.price;
+            document.getElementById('modalStatus').textContent = prop.status;
+            document.getElementById('modalBeds').textContent = prop.bedrooms > 0 ? prop.bedrooms : 'Commercial';
+            document.getElementById('modalBaths').textContent = prop.bathrooms;
+            document.getElementById('modalSqft').textContent = prop.sqft.toLocaleString();
+            document.getElementById('modalType').textContent = prop.type.toUpperCase();
+            document.getElementById('modalDesc').textContent = prop.description;
+
+            document.getElementById('btnBookViewing').onclick = () => {
+                propertyModal.classList.remove('open');
+                openPrivateTourModal(prop.name);
+            };
+
+            propertyModal.classList.add('open');
+        }
+
+        function openPrivateTourModal(propertyName) {
+            document.getElementById('contactMessage').value = `I am requesting a confidential private viewing and investor dossier for: ${propertyName}.`;
+            document.getElementById('contactNature').value = 'acquisition';
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Private viewing inquiry drafted for: ${propertyName}`, 'fa-calendar-check');
+        }
+
+        modalCloseBtn.addEventListener('click', () => {
+            propertyModal.classList.remove('open');
+        });
+
+        propertyModal.addEventListener('click', (e) => {
+            if (e.target === propertyModal) {
+                propertyModal.classList.remove('open');
+            }
+        });
+
+        // Mortgage & Investment Calculator
+        const calcPrice = document.getElementById('calcPrice');
+        const calcDown = document.getElementById('calcDown');
+        const calcRate = document.getElementById('calcRate');
+        const calcTerm = document.getElementById('calcTerm');
+
+        const calcPriceDisplay = document.getElementById('calcPriceDisplay');
+        const calcDownDisplay = document.getElementById('calcDownDisplay');
+        const calcRateDisplay = document.getElementById('calcRateDisplay');
+        const calcTermDisplay = document.getElementById('calcTermDisplay');
+
+        const calcTotalMonthly = document.getElementById('calcTotalMonthly');
+        const valPI = document.getElementById('valPI');
+        const valTax = document.getElementById('valTax');
+        const valIns = document.getElementById('valIns');
+        const valHOA = document.getElementById('valHOA');
+
+        const barPI = document.getElementById('barPI');
+        const barTax = document.getElementById('barTax');
+        const barIns = document.getElementById('barIns');
+        const barHOA = document.getElementById('barHOA');
+
+        function updateCalculator() {
+            const price = parseFloat(calcPrice.value);
+            let down = parseFloat(calcDown.value);
+            
+            // Constrain down payment to not exceed price
+            if (down >= price) {
+                down = price * 0.9;
+                calcDown.value = down;
+            }
+            calcDown.max = price;
+
+            const rate = parseFloat(calcRate.value);
+            const termYears = parseInt(calcTerm.value);
+
+            const downPct = Math.round((down / price) * 100);
+            calcPriceDisplay.textContent = '$' + price.toLocaleString();
+            calcDownDisplay.textContent = `$${down.toLocaleString()} (${downPct}%)`;
+            calcRateDisplay.textContent = `${rate.toFixed(2)}%`;
+            calcTermDisplay.textContent = `${termYears} Years`;
+
+            const loanAmount = price - down;
+            const monthlyRate = (rate / 100) / 12;
+            const totalMonths = termYears * 12;
+
+            let monthlyPI = 0;
+            if (monthlyRate > 0) {
+                monthlyPI = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) / (Math.pow(1 + monthlyRate, totalMonths) - 1);
+            } else {
+                monthlyPI = loanAmount / totalMonths;
+            }
+
+            const monthlyTax = (price * 0.01) / 12;
+            const monthlyIns = (price * 0.003) / 12;
+            const monthlyHOA = 650; // luxury average reserve
+
+            const totalMonthly = monthlyPI + monthlyTax + monthlyIns + monthlyHOA;
+
+            calcTotalMonthly.textContent = '$' + Math.round(totalMonthly).toLocaleString();
+            valPI.textContent = '$' + Math.round(monthlyPI).toLocaleString();
+            valTax.textContent = '$' + Math.round(monthlyTax).toLocaleString();
+            valIns.textContent = '$' + Math.round(monthlyIns).toLocaleString();
+            valHOA.textContent = '$' + Math.round(monthlyHOA).toLocaleString();
+
+            const pctPI = (monthlyPI / totalMonthly) * 100;
+            const pctTax = (monthlyTax / totalMonthly) * 100;
+            const pctIns = (monthlyIns / totalMonthly) * 100;
+            const pctHOA = (monthlyHOA / totalMonthly) * 100;
+
+            barPI.style.width = pctPI + '%';
+            barTax.style.width = pctTax + '%';
+            barIns.style.width = pctIns + '%';
+            barHOA.style.width = pctHOA + '%';
+        }
+
+        calcPrice.addEventListener('input', updateCalculator);
+        calcDown.addEventListener('input', updateCalculator);
+        calcRate.addEventListener('input', updateCalculator);
+        calcTerm.addEventListener('input', updateCalculator);
+
+        // Contact & Lead Submission
+        document.getElementById('leadContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('contactName').value;
+            const nature = document.getElementById('contactNature').options[document.getElementById('contactNature').selectedIndex].text;
+            
+            showToast(`Thank you, ${name}. Your confidential request regarding "${nature}" has been transmitted to our senior partners.`, 'fa-shield-halved');
+            this.reset();
+        });
+
+        // Newsletter Submission
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('newsletterEmail').value;
+            showToast(`Subscribed ${email} to Private Office Global Intelligence.`, 'fa-newspaper');
+            this.reset();
+        });
+
+        // Initialization
+        document.addEventListener('DOMContentLoaded', () => {
+            updateFavBadge();
+            renderProperties(properties);
+            updateCalculator();
+        });
+    </script>
+</body>
+</html>
